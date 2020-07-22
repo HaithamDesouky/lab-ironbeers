@@ -23,10 +23,10 @@ app.get('/', (req, res) => {
 app.get('/beers', (req, res) => {
   punkAPI
     .getBeers()
-      .then(beersFromApi => {
-        console.log(beersFromApi);
-        res.render('beers', { beersFromApi });
-      })
+    .then(beersFromApi => {
+      console.log(beersFromApi);
+      res.render('beers', { beersFromApi });
+    })
 
     .catch(error => console.log(error));
 });
@@ -37,6 +37,19 @@ app.get('/random-beer', (req, res) => {
     .then(randomBeer => {
       console.log(randomBeer[0]);
       res.render('random-beer', randomBeer[0]);
+    })
+
+    .catch(error => console.log(error));
+});
+
+app.get('/singlebeer/:id', (req, res) => {
+  const id = req.params.id;
+  console.log(id);
+  punkAPI
+    .getBeer(id)
+    .then(beer => {
+      console.log(beer[0]);
+      res.render('singlebeer', beer[0]);
     })
 
     .catch(error => console.log(error));
