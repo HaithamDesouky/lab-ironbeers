@@ -6,7 +6,6 @@ img {
 .container {
   padding: 3rem;
   display: flex;
-  flex-basis: 3;
   flex-wrap: wrap;
   justify-content: center;
   
@@ -44,4 +43,16 @@ strong {
 
 .container p {
   margin-top: 1rem;
+}
+
+@media screen and (max-width: 769px) {
+.container{
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.box {
+ width: auto;
+}
 }
