@@ -1,0 +1,23 @@
+body {
+  height: 100%;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.container a {
+  background-color: #2081c3;
+  color: aliceblue;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 0.4rem;
+  margin: 0.5rem;
+}
+
+img {
+  height: 18rem;
+}

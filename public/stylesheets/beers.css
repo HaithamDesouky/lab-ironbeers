@@ -1,0 +1,47 @@
+
+img {
+  height: 18rem;
+}
+
+.container {
+  padding: 3rem;
+  display: flex;
+  flex-basis: 3;
+  flex-wrap: wrap;
+  justify-content: center;
+  
+}
+.box img {
+  margin-left: auto;
+    margin-right: auto;
+    display: block;
+    margin-bottom: 1.2rem;
+
+}
+.box {
+  width: 30%;
+  display: flex;
+ 
+  padding: 1rem;
+}
+
+li {
+    list-style: none;
+
+}
+
+.container a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+  font-size: 1.2rem;
+
+}
+
+strong {
+  color: grey;
+}
+
+.container p {
+  margin-top: 1rem;
+}
